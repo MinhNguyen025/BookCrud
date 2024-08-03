@@ -25,44 +25,43 @@ public class ProductDto {
 
     private MultipartFile imageFile;
 
-    public @NotEmpty(message = "The name is required") String getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(@NotEmpty(message = "The name is required") String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public @NotEmpty(message = "The brand is required") String getBrand() {
+    public String getBrand() {
         return brand;
     }
 
-    public void setBrand(@NotEmpty(message = "The brand is required") String brand) {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 
-    public @NotEmpty(message = "The category is required") String getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(@NotEmpty(message = "The category is required") String category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
-    @Min(0)
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(@Min(0) double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public @Size(min = 10, message = "The description should be at least 10 characters") @Size(max = 2000, message = "The description cannot exceed 2000 characters") String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(@Size(min = 10, message = "The description should be at least 10 characters") @Size(max = 2000, message = "The description cannot exceed 2000 characters") String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
