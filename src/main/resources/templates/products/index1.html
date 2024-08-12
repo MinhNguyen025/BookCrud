@@ -11,6 +11,14 @@
     <h1>Create</h1>
     <a class="btn btn-primary" href="/products/create">Create Product</a>
 
+    <!-- Thêm form tìm kiếm -->
+    <form action="/products/search" method="get" class="my-4">
+        <div class="input-group">
+            <input type="text" name="keyword" class="form-control" placeholder="Search for products..." th:value="${keyword}">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+
     <table class="table">
         <thead>
         <tr>
