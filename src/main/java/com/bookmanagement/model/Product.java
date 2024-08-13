@@ -21,6 +21,7 @@ public class Product {
     private String imageFileName;
     private Date createAt;
 
+    //getter and setter
     public int getId() {
         return id;
     }
